@@ -22,7 +22,7 @@ if __name__ == "__main__":
 	out_root = Path(args.out_dir)
 	out_root.mkdir(exist_ok=True)
 
-	# Столбцы, по которым делаем концепты
+	# Concept columns
 	skip_cols = {"image_id", "lesion_id"}
 	columns = [c for c in df.columns if c not in skip_cols]
 

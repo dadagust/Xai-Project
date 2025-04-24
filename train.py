@@ -1,21 +1,8 @@
-#!/usr/bin/env python
-# train_skin_lesion_classifier.py
-#
 # Stand‑alone script for training a binary CNN classifier (melanoma vs. benign)
 # on a dermatoscopic image dataset arranged like:
-# └── data_dir
-#     ├── train
-#     │   ├── benign
-#     │   └── malignant
-#     ├── val
-#     │   ├── benign
-#     │   └── malignant
-#     └── test
-#         ├── benign
-#         └── malignant
 #
-# Example:
-# py -3.11 train.py --data_dir data_dir --epochs 25 --batch_size 32 --lr 3e-4 --output model_best.pth
+# Example run:
+# py -3.11 train.py --data_dir data_dir --epochs 5 --batch_size 64 --lr 3e-4 --output model_best.pth
 
 
 import argparse
